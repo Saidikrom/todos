@@ -66,8 +66,8 @@ class _AddNewTaskState extends State<AddNewTask> {
     debugPrint(' Time is up');
     NotificationService().scheduleNotification(
       title: 'Todo Notification',
-      body: _title,
-      // 'Reminder: Your todo item ${ widget.todo!.title} is due now. Please complete it as soon as possible.',
+      body:
+          'Reminder: Your todo item ${widget.todo!.title} is due now. Please complete it as soon as possible.',
       scheduleNotificationDateTime: scheduleTime,
     );
   }
