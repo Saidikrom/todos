@@ -67,7 +67,7 @@ class _AddNewTaskState extends State<AddNewTask> {
     NotificationService().scheduleNotification(
       title: 'Todo Notification',
       body:
-          'Reminder: Your todo item ${widget.todo!.title} is due now. Please complete it as soon as possible.',
+          'Reminder: Your todo item ${_title} is due now. Please complete it as soon as possible.',
       scheduleNotificationDateTime: scheduleTime,
     );
   }
