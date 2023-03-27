@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       style: FontStyles.appBarText,
                                     ),
                                     Text(
-                                      'Today you have 9 tasks',
+                                      'Today you have ${state.todos.length} tasks',
                                       style: FontStyles.appBarText,
                                     ),
                                   ],
